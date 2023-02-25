@@ -12,15 +12,20 @@
 }
 
 input {
-    font-size: 18px;
+    font-size: 22px;
     width:  400px;
 }
 
-button {
+.btn {
     background-color: aquamarine;
     font-size: 20px;
     padding: 8px 18px;
     border: none;
     border-radius: 12px;
     font-weight: 600;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 400;
 }
