@@ -50,7 +50,7 @@ function Register() {
                                 onChange={(e) => { setPhone(e.target.value) }} />
                         </label>
                     </div>
-                    <input type="button" value="Submit" className='btn' onClick={onSubmit}></input>
+                    <input type="button" value="SUBMIT" className='btn' onClick={onSubmit}></input>
                 </div>
 
             </div>

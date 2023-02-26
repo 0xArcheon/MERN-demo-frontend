@@ -14,15 +14,21 @@
 input {
     font-size: 22px;
     width:  400px;
+    border-color: #40513B;
+    padding:10px;
+    margin:10px 0; 
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius:10px;
 }
 
 .btn {
-    background-color: aquamarine;
+    background-color: #9DC08B;
     font-size: 20px;
     padding: 8px 18px;
     border: none;
     border-radius: 12px;
     font-weight: 600;
+    color: #40513B;
 }
 
 h1 {

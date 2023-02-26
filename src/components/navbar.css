@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 .nav {
     display: flex;
-    background-color: cadetblue;
+    padding-left: 22px;
+    padding-right: 22px;
+    background-color: #40513B;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+a {
+    text-decoration: none;
     color: white;
 }
