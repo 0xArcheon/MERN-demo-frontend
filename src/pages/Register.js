@@ -12,12 +12,13 @@ function Register() {
     const [phone, setPhone] = useState("");
 
     async function onSubmit(e) {
+        e.preventDefault();
         Axios.post("http://localhost:3001/insert", {
             name: name,
             dob: dob,
             email: email,
             phone: phone
-        });
+        }).then(alert("Data Submitted"));
     }
 
     return (
@@ -28,25 +29,25 @@ function Register() {
                 <div className='flex-form'>
                     <div className="field">
                         <label>Full Name <br />
-                            <input type="text" value={name} id="name"
+                            <input type="text" value={name} id="name" required
                                 onChange={(e) => { setName(e.target.value) }} />
                         </label>
                     </div>
                     <div className="field">
                         <label>Date of Birth <br />
-                            <input type="date" value={dob} id="dob"
+                            <input type="date" value={dob} id="dob" required
                                 onChange={(e) => { setDob(e.target.value) }} />
                         </label>
                     </div>
                     <div className="field">
                         <label>Email <br />
-                            <input type="email" value={email} id="email"
+                            <input type="email" value={email} id="email" required
                                 onChange={(e) => { setEmail(e.target.value) }} />
                         </label>
                     </div>
                     <div className="field">
                         <label>Contact Number <br />
-                            <input type="text" value={phone} id="phone"
+                            <input type="text" value={phone} id="phone" required
                                 onChange={(e) => { setPhone(e.target.value) }} />
                         </label>
                     </div>
